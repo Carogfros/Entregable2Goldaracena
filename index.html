@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador Nutricional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Simulador de Requerimiento Energético</h1>
+
+        <form id="formNutricional">
+
+            <input type="text" id="nombre" placeholder="Nombre" required>
+
+            <input type="number" id="edad" placeholder="Edad" required>
+
+            <input type="number" id="peso" placeholder="Peso (kg)" required>
+
+            <input type="number" id="altura" placeholder="Altura (cm)" required>
+
+            <select id="sexo" required>
+                <option value="">Seleccione sexo</option>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select>
+
+            <select id="actividad" required>
+                <option value="">Nivel de actividad</option>
+                <option value="1.2">Sedentario</option>
+                <option value="1.3">Ligera</option>
+                <option value="1.4">Moderada</option>
+                <option value="1.6">Intensa</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+
+        </form>
+
+        <div id="resultado"></div>
+
+        <div id="historial"></div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
